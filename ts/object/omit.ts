@@ -4,7 +4,7 @@
  * @param props list of keys to omit.
  * @returns a new object with omitted keys.
  */
-export const Omit = <T extends Record<string | symbol, unknown>, K extends (keyof T)[]>(
+export const omit = <T extends Record<string | symbol, unknown>, K extends (keyof T)[]>(
 	record: Readonly<T>,
 	props: Readonly<K>
 ) => {
